@@ -132,7 +132,7 @@ public class Deepak {
 
 <div align="center">
 
-[![Trophy](https://github-profile-trophy.vercel.app/?username=G-Deepak-05&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7&margin-w=4)](https://github.com/G-Deepak-05)
+[![Trophy](https://github-profile-trophy.vercel.app/?username=G-Deepak-05&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=8&margin-h=8)](https://github.com/G-Deepak-05)
 
 </div>
 
