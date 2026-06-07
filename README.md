@@ -128,11 +128,16 @@ public class Deepak {
 
 ---
 
-## 🏆 Trophy Wall
+## 🏆 Certifications & Badges
 
 <div align="center">
 
-[![Trophy](https://github-profile-trophy.vercel.app/?username=G-Deepak-05&theme=tokyonight&no-frame=true&no-bg=true&row=2&column=4&margin-w=8&margin-h=8)](https://github.com/G-Deepak-05)
+![Oracle DS](https://img.shields.io/badge/Oracle%20Cloud-Data%20Science%20Professional-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Arch](https://img.shields.io/badge/Oracle%20Cloud-Architect%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle AI](https://img.shields.io/badge/Oracle%20Cloud-AI%20Foundations%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Foundations](https://img.shields.io/badge/Oracle%20Cloud-Foundations%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![IBM](https://img.shields.io/badge/IBM%20Cloud-CDN%20%2B%20Akamai%20Integration-1261FE?style=for-the-badge&logo=ibmcloud&logoColor=white)
+![NSDC](https://img.shields.io/badge/NSDC-Level%205%20Certified-38BDAE?style=for-the-badge&logoColor=white)
 
 </div>
 
