@@ -1,53 +1,86 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=G%20Deepak&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Backend%20Engineer%20%7C%20Cloud-Native%20%7C%20Java%20%2B%20Spring%20WebFlux%20%2B%20Kafka&descAlignY=62&descSize=16" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=G%20Deepak&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Backend%20Engineer%20%E2%80%94%20Distributed%20Systems%20%7C%20Cloud-Native%20%7C%20Java%20%2B%20Kafka%20%2B%20Kubernetes&descAlignY=62&descSize=15" width="100%"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Backend+Engineer+%7C+Java+17+%2B+Spring+WebFlux;Building+Scalable+Cloud-Native+Microservices;AWS+%7C+Kubernetes+%7C+Kafka+%7C+Docker;Open+to+Exciting+Backend+Opportunities+%F0%9F%9A%80)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=I+build+systems+that+don%27t+break+at+3AM.;15%2B+reactive+APIs.+%E2%88%BC30%25+latency+cut.;Kafka+%7C+Redis+%7C+EKS+%7C+OpenTelemetry;Currently+learning+Go+%2B+gRPC+%F0%9F%A6%AB)](https://git.io/typing-svg)
 
 [![Profile Views](https://komarev.com/ghpvc/?username=G-Deepak-05&color=70a5fd&style=flat-square&label=Profile+Views)](https://github.com/G-Deepak-05)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-gdeepak--ase-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/gdeepak-ase)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-G%20Deepak-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/gdeepak-ase)
 [![Email](https://img.shields.io/badge/Email-gdepakise2025%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:gdepakise2025@gmail.com)
-[![Location](https://img.shields.io/badge/Location-Bengaluru%2C%20India-38BDAE?style=flat-square&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Bengaluru,India)
+[![Location](https://img.shields.io/badge/Bengaluru%2C%20India-🇮🇳-38BDAE?style=flat-square)](https://maps.google.com/?q=Bengaluru,India)
 
 </div>
 
 ---
 
-## 🧑‍💻 About Me
+## 🗺️ The Story So Far
 
-<img align="right" width="360" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif"/>
+> *Every engineer has an origin story. Here's mine — written the only way I know how.*
 
-```java
-public class Deepak {
-
-    String name        = "G Deepak";
-    String location    = "Bengaluru, India";
-    String degree      = "B.E. — Information Science & Engineering";
-    String github      = "github.com/G-Deepak-05";
-
-    String[] stack = {
-        "Java 17", "Spring Boot", "Spring WebFlux",
-        "Apache Kafka", "Redis", "PostgreSQL",
-        "Docker", "Kubernetes", "AWS EKS"
-    };
-
-    String[] currentlyLearning = {
-        "Go (Golang)", "gRPC", "Advanced Distributed Systems"
-    };
-
-    String funFact = "I led a 15-member cricket team AND a 100+ member coding club!";
-
-    String motto() {
-        return "Build fast. Scale smart. Ship reliably. 🚀";
-    }
-}
 ```
+COMMIT LOG — G Deepak / backend-engineer
+─────────────────────────────────────────────────────────────────────────
 
-<br clear="right"/>
+[Sep 2024]  feat: bootstrapped career at Rooman Technologies
+            → Spent 510 hours learning AWS & IBM Cloud end-to-end
+            → Shipped a Figma-prototyped app across 4 user journeys
+            → Earned NSDC Level 5 Certification
+
+[Mar 2025]  chore: levelled up → Cravita Technologies (AWS Cloud Engineer)
+            → Built CI/CD pipelines with CodePipeline + CodeDeploy + Jenkins
+            → Automated infra provisioning with Terraform + Ansible
+            → Architected 3-tier AWS setup: ALB + EC2 AutoScaling + RDS + VPC
+
+[Jun 2025]  feat: 4x Oracle Cloud certifications in 3 months ⚡
+            → Data Science Professional, Architect Associate,
+               AI Foundations, Cloud Foundations
+
+[Sep 2025]  🚀 feat: Backend Engineer @ Tejmonvi → Client: Sportstech GmbH
+            → 15+ Spring WebFlux APIs | ~30% latency reduction
+            → Redis caching → ~40% DB load cut across 5+ microservices
+            → Zero 403 errors in prod via OpenTelemetry + OpenSearch tracing
+            → Docker + EKS + Jenkins CI/CD across 3 environments
+
+[Now]       WIP: learning Go, gRPC, and advanced distributed systems patterns
+            → Always building. Always shipping.
+
+─────────────────────────────────────────────────────────────────────────
+```
 
 ---
 
-## 🛠️ Tech Stack
+## 🧬 System Architecture — `deepak.service`
+
+> *If I were a microservice, this is how I'd be architected.*
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        deepak.service  v1.5.0                           │
+│              ☁️  AWS EKS   |   🐳 Docker   |   ⚙️ Spring WebFlux        │
+├───────────────────────┬─────────────────────┬───────────────────────────┤
+│     INPUT LAYER       │     CORE ENGINE      │      OUTPUT LAYER         │
+│  ─────────────────    │  ─────────────────   │   ─────────────────────   │
+│  🔐 Auth Gateway      │  ⚛️  Reactor Core    │   🌐 REST APIs            │
+│  JWT + Redisson       │  Mono / Flux flows   │   15+ endpoints           │
+│                       │                      │                           │
+│  📨 Kafka Consumer    │  🧠 Business Logic   │   📤 Kafka Producer       │
+│  Event-driven input   │  Java 17 streams     │   Async event publish     │
+│                       │                      │                           │
+│  🗄️ R2DBC Postgres    │  🔄 Redis Cache      │   📊 Observability        │
+│  Non-blocking I/O     │  Redisson + TTL      │   OTel + OpenSearch       │
+├───────────────────────┴─────────────────────┴───────────────────────────┤
+│  INFRA LAYER                                                             │
+│  🏗️ Terraform + Ansible  |  🚀 Jenkins CI/CD  |  ☸️ Kubernetes Manifests │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  METRICS (prod):
+  ✅  Latency:  reduced ~30%    ✅  DB load:    cut ~40%
+  ✅  Uptime:   99.9%+          ✅  Prod errors: ~0 on auth routes
+```
+
+---
+
+## 🛠️ Tech DNA
 
 **Languages**
 
@@ -55,9 +88,9 @@ public class Deepak {
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell_Scripting-121011?style=flat-square&logo=gnubash&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-121011?style=flat-square&logo=gnubash&logoColor=white)
 
-**Frameworks & Libraries**
+**Frameworks**
 
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![Spring WebFlux](https://img.shields.io/badge/Spring%20WebFlux-6DB33F?style=flat-square&logo=spring&logoColor=white)
@@ -69,16 +102,11 @@ public class Deepak {
 **Messaging & Cache**
 
 ![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis%20(Redisson)-DC382D?style=flat-square&logo=redis&logoColor=white)
-
-**Databases**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=flat-square&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis%20Redisson-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 **Cloud & DevOps**
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS%20EKS%20%7C%20RDS%20%7C%20S3-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
@@ -89,7 +117,7 @@ public class Deepak {
 
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Micrometer](https://img.shields.io/badge/Micrometer-1EB7EA?style=flat-square&logoColor=white)
+![Micrometer](https://img.shields.io/badge/Micrometer-1EB7EA?style=flat-square)
 
 ---
 
@@ -108,7 +136,7 @@ public class Deepak {
 
 ---
 
-## 🔥 Streak Stats
+## 🔥 Streak
 
 <div align="center">
 
@@ -122,113 +150,108 @@ public class Deepak {
 
 <div align="center">
 
-[![Deepak's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=G-Deepak-05&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true)](https://github.com/G-Deepak-05)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=G-Deepak-05&theme=tokyo-night&bg_color=0d1117&color=70a5fd&line=bf91f3&point=38bdae&area=true&hide_border=true)](https://github.com/G-Deepak-05)
 
 </div>
 
 ---
 
-## 🏆 Certifications & Badges
+## 🚀 Production Deployments *(Projects)*
+
+<details>
+<summary><strong>⚡ StakeLite</strong> — Provably fair virtual betting platform</summary>
+
+<br/>
+
+> **Stack:** Next.js 14 · Spring Boot 3 · Java 21 · PostgreSQL · JWT · SHA-256
+
+**The problem:** Build a betting platform that users can trust is fair — no black boxes.
+
+**What I built:** Cryptographically provably fair REST APIs using SHA-256 hash chains for game outcomes. Auth, wallet, and game logic all behind reactive endpoints. Real-time animated frontend deployed to Vercel. Backend on Render. Database on Supabase.
+
+**Result:** Zero-cost production deployment. Fully auditable outcome history.
+
+</details>
+
+<details>
+<summary><strong>🧠 Epilepsy Seizure Detection</strong> — ML-powered wearable alert system</summary>
+
+<br/>
+
+> **Stack:** Python · scikit-learn · Signal Processing · ECG Feature Engineering
+
+**The problem:** Seizures are unpredictable and dangerous. Early detection saves lives.
+
+**What I built:** Feature-engineered ECG signals from 3 patient datasets, trained classifiers to detect pre-seizure patterns, and integrated the model with a wearable alert prototype.
+
+**Result:** +15% accuracy improvement over the baseline across all 3 datasets.
+
+</details>
+
+<details>
+<summary><strong>✋ Hand Sign Language Detector</strong> — Real-time ASL recognition</summary>
+
+<br/>
+
+> **Stack:** Python · OpenCV · scikit-learn · Frame Capture Pipeline
+
+**The problem:** Communication barrier for the hearing impaired in everyday digital interfaces.
+
+**What I built:** Real-time video frame capture pipeline using OpenCV feeding into scikit-learn classifiers trained on 10 ASL signs.
+
+**Result:** 95%+ recognition accuracy in real-time.
+
+</details>
+
+---
+
+## 💼 Where I've Shipped
+
+<details>
+<summary><strong>🏢 Tejmonvi Softwares</strong> — Backend Engineer · Sep 2025–May 2026 · Client: Sportstech Brands Holding GmbH</summary>
+
+<br/>
+
+- ⚡ Built **15+ Spring WebFlux APIs** (Mono/Flux) — cut avg response latency by **~30%** via non-blocking R2DBC + AWS RDS Proxy
+- 🔴 Architected **Redis (Redisson)** JWT + country-code caching across **5+ Kafka microservices** — dropped DB load by **~40%**
+- 🔍 Traced and resolved cross-service 403 failures using **OpenTelemetry + OpenSearch** — near-zero prod error rate
+- 🚀 Containerized on **Docker**, orchestrated on **AWS EKS**, shipped via **Jenkins CI/CD** across 3 environments
+
+</details>
+
+<details>
+<summary><strong>☁️ Cravita Technologies</strong> — Trainee AWS Cloud Engineer · Mar–Sep 2025</summary>
+
+<br/>
+
+- Built end-to-end **CI/CD pipelines** (CodePipeline + CodeDeploy + Jenkins) for containerized K8s workloads
+- Automated infra across dev/staging/prod with **Terraform + Ansible**
+- Designed a **3-tier AWS setup**: ALB · EC2 Auto Scaling · RDS · VPC · CloudWatch
+
+</details>
+
+<details>
+<summary><strong>🌩️ Rooman Technologies</strong> — Cloud App Developer Intern · Sep 2024–Feb 2025</summary>
+
+<br/>
+
+- Completed **510-hour AWS + IBM Cloud** programme → **NSDC Level 5 Certified**
+- Shipped a Figma-prototyped app across **4 end-to-end user journeys**
+
+</details>
+
+---
+
+## 🏅 Certifications
 
 <div align="center">
 
 ![Oracle DS](https://img.shields.io/badge/Oracle%20Cloud-Data%20Science%20Professional-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 ![Oracle Arch](https://img.shields.io/badge/Oracle%20Cloud-Architect%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Oracle AI](https://img.shields.io/badge/Oracle%20Cloud-AI%20Foundations%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle AI](https://img.shields.io/badge/Oracle%20Cloud-AI%20Foundations-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 ![Oracle Foundations](https://img.shields.io/badge/Oracle%20Cloud-Foundations%20Associate-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![IBM](https://img.shields.io/badge/IBM%20Cloud-CDN%20%2B%20Akamai%20Integration-1261FE?style=for-the-badge&logo=ibmcloud&logoColor=white)
-![NSDC](https://img.shields.io/badge/NSDC-Level%205%20Certified-38BDAE?style=for-the-badge&logoColor=white)
-
-</div>
-
----
-
-## 💼 Work Experience
-
-<details>
-<summary><strong>🏢 Tejmonvi Softwares Pvt. Ltd.</strong> — Backend Engineer &nbsp;|&nbsp; Sep 2025 – May 2026 &nbsp;|&nbsp; Bengaluru, India</summary>
-
-<br/>
-
-> **Client:** Sportstech Brands Holding GmbH
->
-> ![Java](https://img.shields.io/badge/Java%2017-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-> ![Spring WebFlux](https://img.shields.io/badge/Spring%20WebFlux-6DB33F?style=flat-square&logo=spring&logoColor=white)
-> ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-> ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-> ![AWS EKS](https://img.shields.io/badge/AWS%20EKS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-> ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
-> ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-> ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-
-- ⚡ Engineered **15+ Spring Boot WebFlux APIs** with reactive Mono/Flux flows — reduced average response latency by **~30%** via non-blocking R2DBC/PostgreSQL on AWS RDS Proxy.
-- 🔴 Slashed downstream DB load by **~40%** on high-frequency auth routes by architecting Redis (Redisson) caching for JWT validation and country-code lookups across **5+ Kafka-connected microservices**.
-- 🔍 Eliminated near-zero production error rate on cross-service 403 failures via distributed tracing with **OpenTelemetry** and **OpenSearch** across gateway and token-verification services.
-- 🚀 Containerized services with Docker, orchestrated on **AWS EKS** using Kubernetes manifests and Jenkins CI/CD with JUnit/Mockito coverage across **3 environments**.
-
-</details>
-
-<details>
-<summary><strong>☁️ Cravita Technologies India Pvt. Ltd.</strong> — Trainee, AWS Cloud Engineer &nbsp;|&nbsp; Mar 2025 – Sep 2025 &nbsp;|&nbsp; Bengaluru, India</summary>
-
-<br/>
-
-> ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-> ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-> ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
-> ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-> ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-
-- 🔁 Built end-to-end CI/CD pipelines using **AWS CodePipeline, CodeDeploy, and Jenkins** for containerized Kubernetes workloads, cutting manual release overhead significantly.
-- 🏗️ Automated infrastructure provisioning with **Terraform and Ansible** across dev/staging/prod, enabling version-controlled environment setups.
-- 📊 Architected a **3-tier AWS setup** with ALB, EC2 Auto Scaling, RDS, and VPC network isolation via NAT Gateway and security groups; monitored via CloudWatch.
-
-</details>
-
-<details>
-<summary><strong>🌩️ Rooman Technologies</strong> — Cloud Application Developer Intern &nbsp;|&nbsp; Sep 2024 – Feb 2025 &nbsp;|&nbsp; Bengaluru, India</summary>
-
-<br/>
-
-> ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-> ![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-1261FE?style=flat-square&logo=ibmcloud&logoColor=white)
-> ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-
-- 🎓 Completed a **510-hour AWS and IBM Cloud programme**, earning NSDC Level 5 Certification.
-- 📱 Delivered a Figma-prototyped app across **4 end-to-end user journeys**, accelerating cloud readiness.
-
-</details>
-
----
-
-## 🚀 Featured Projects
-
-<div align="center">
-
-| Project | Stack | Highlights |
-|--------|-------|------------|
-| [**StakeLite** — Virtual Betting Platform](https://github.com/G-Deepak-05) | Next.js 14, Spring Boot 3, Java 21, PostgreSQL, JWT | Provably fair REST APIs (SHA-256) for auth, wallet & game logic; real-time animated frontend; **zero-cost deploy** via Vercel + Render + Supabase |
-| [**Epilepsy Seizure Detection**](https://github.com/G-Deepak-05) | Python, scikit-learn, Signal Processing | **+15% accuracy** over baseline via ECG signal feature engineering; integrated with wearable alert prototype across 3 patient datasets |
-| [**Hand Sign Language Detector**](https://github.com/G-Deepak-05) | Python, OpenCV, scikit-learn | Real-time recognition of **10 hand signs** at **95%+ accuracy** using OpenCV frame capture and scikit-learn classifiers |
-
-</div>
-
----
-
-## 🏅 Achievements
-
-<div align="center">
-
-| 🏆 | Achievement | Details |
-|----|-------------|---------|
-| 🏏 | **Cricket Team Captain** | Led a 15-member team in inter-college tournament; strategic planning and leadership under pressure |
-| 💻 | **Programming Club Coordinator** | Organised coding workshops & challenges for **100+ members** |
-| ☁️ | **Oracle Cloud Infrastructure 2025 — Data Science Professional** | Certified Sep 2025 |
-| ☁️ | **Oracle Cloud Infrastructure 2025 — Architect Associate** | Certified Sep 2025 |
-| 🤖 | **Oracle Cloud Infrastructure 2025 — AI Foundations Associate** | Certified Aug 2025 |
-| 🌐 | **Oracle Cloud Infrastructure 2025 — Foundations Associate** | Certified Aug 2025 |
-| 🔗 | **CDN with IBM Cloud Akamai Integration** | Certified Apr 2025 |
-| 🏅 | **NSDC Level 5 Certification** | Awarded after 510-hour AWS + IBM Cloud programme |
+![IBM](https://img.shields.io/badge/IBM%20Cloud-CDN%20%2B%20Akamai-1261FE?style=for-the-badge&logo=ibmcloud&logoColor=white)
+![NSDC](https://img.shields.io/badge/NSDC-Level%205%20Certified-38BDAE?style=for-the-badge)
 
 </div>
 
@@ -238,30 +261,41 @@ public class Deepak {
 
 <div align="center">
 
-| Degree | Institution | Year | Score |
-|--------|-------------|------|-------|
-| B.E. — Information Science & Engineering | The Oxford College of Engineering, Bengaluru | 2025 | CGPA: 7.69 |
+| Degree | Institution | Year | CGPA |
+|--------|-------------|------|------|
+| B.E. — Information Science & Engineering | The Oxford College of Engineering, Bengaluru | 2025 | 7.69 |
 
 </div>
 
 ---
 
-## 📚 Currently Learning
+## 📚 What's in the pipeline
 
 ```
-🦫 Go (Golang)        → Goroutines, Channels, gRPC Services
-🌐 Distributed Systems → Consensus Algorithms, CAP Theorem, Raft Protocol
-🔭 Observability 2.0  → OpenTelemetry Collector, Tempo, Grafana Dashboards
-🧱 System Design      → High-Availability Patterns, Event Sourcing, CQRS
+🦫 Go (Golang)          → Goroutines · Channels · gRPC microservices
+🌐 Distributed Systems  → Raft · Consensus · CAP theorem in practice
+🔭 Observability 2.0    → OTel Collector · Tempo · Grafana
+🧱 System Design        → Event Sourcing · CQRS · High-availability patterns
+```
+
+---
+
+## 👤 Beyond the terminal
+
+```java
+// Non-technical runtime config
+
+String role_outside_work  = "Cricket Team Captain (15-member squad)";
+String community          = "Programming Club Coordinator — 100+ members";
+String currentlyReading   = "Designing Data-Intensive Applications — Kleppmann";
+String philosophy         = "Build things you'd be proud to be paged about at 3AM.";
 ```
 
 ---
 
 <div align="center">
 
-*"Build fast. Scale smart. Ship reliably."*
-
-⭐ **If you find my work interesting, feel free to star a repo or connect on LinkedIn!**
+*"Ship fast. Trace everything. Sleep well."*
 
 </div>
 
