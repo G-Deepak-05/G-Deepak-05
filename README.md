@@ -151,13 +151,12 @@ HEAD  wip:  learning Go · gRPC · Raft · Event Sourcing · CQRS
 <div align="center">
 
 [![StakeLite](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=StakeLite&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/StakeLite)
-[![Seizure-Detector](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=Seizure-Detector&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/Seizure-Detector)
+[![Java_Internals_Visualizer](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=Java_Internals_Visualizer&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/Java_Internals_Visualizer)
 
-[![Sign-Language-AI](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=Sign-Language-AI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/Sign-Language-AI)
+[![HirePilotAI](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=HirePilotAI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/HirePilotAI)
+[![DS-Visualizer](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=DS-Visualizer&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/DS-Visualizer)
 
 </div>
-
-> ⚠️ _Replace repo names above with your actual repository slugs from GitHub._
 
 ---
 
