@@ -1,8 +1,8 @@
 <!--
   G-Deepak-05 / G-Deepak-05
   ─────────────────────────────────────────────────────
-  Design: Dark editorial — no capsule banners, no typing SVGs,
-  no badge walls. SVG sections baked inline. Unique layout.
+  Hacker/terminal aesthetic. No badge walls.
+  Snake · WIP · Wakatime · Featured repos · Full system diagram.
 -->
 
 <div align="center">
@@ -11,6 +11,12 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=15&duration=1&pause=99999&color=70A5FD&center=true&vCenter=true&repeat=false&width=700&height=30&lines=Backend+Engineer+%E2%80%94+Java+17+%C2%B7+Spring+WebFlux+%C2%B7+Kafka+%C2%B7+Kubernetes+%C2%B7+AWS" alt="role"/>
 
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gdeepak--ase-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/gdeepak-ase)
+[![Email](https://img.shields.io/badge/Email-gdepakise2025@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:gdepakise2025@gmail.com)
+[![Profile Views](https://komarev.com/ghpvc/?username=G-Deepak-05&color=70a5fd&style=flat-square&label=profile+views)](https://github.com/G-Deepak-05)
+
 </div>
 
 <br/>
@@ -18,36 +24,36 @@
 ---
 
 <table width="100%"><tr>
-<td width="60%" valign="top">
+<td width="58%" valign="top">
 
 ### `$ whoami`
 
-Backend engineer who obsesses over **latency, observability, and systems that don't break at 3AM.**
+Backend engineer obsessed with **latency, observability, and systems that don't break at 3AM.**
 
-1.5 years shipping production microservices at scale — reactive APIs, distributed tracing, event-driven architecture. I've cut response times by ~30%, dropped DB load by ~40%, and traced cross-service failures to zero using OpenTelemetry.
+1.5 years shipping production microservices at scale — reactive APIs, distributed tracing, event-driven architecture.
 
-Currently learning **Go** and **gRPC**. Always building something.
+- ⚡ Cut p99 response times **~30%** via non-blocking reactive pipelines
+- 🗄️ Reduced DB load **~40%** with Redis (Redisson) JWT caching
+- 🔍 Drove production 403 errors to **~zero** with OpenTelemetry + OpenSearch
+- 🌍 Currently deepening into **Go · gRPC · Raft · CQRS**
 
-📍 Bengaluru, India &nbsp;·&nbsp; ✉️ gdepakise2025@gmail.com
-
-[![LinkedIn](https://img.shields.io/badge/—%20linkedin-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/gdeepak-ase)
-[![Profile Views](https://komarev.com/ghpvc/?username=G-Deepak-05&color=70a5fd&style=flat-square&label=profile+views)](https://github.com/G-Deepak-05)
+📍 Bengaluru, India
 
 </td>
-<td width="40%" valign="top" align="right">
+<td width="42%" valign="top">
 
 ```java
 class Deepak implements BackendEngineer {
 
-  Stack stack = new Stack(
-    "Java 17", "Spring WebFlux",
-    "Kafka",   "Redis",
-    "Docker",  "Kubernetes",
-    "AWS EKS", "Terraform"
-  );
+  String[] stack = {
+    "Java 17",      "Spring WebFlux",
+    "Kafka",        "Redis (Redisson)",
+    "Docker",       "Kubernetes (EKS)",
+    "Terraform",    "OpenTelemetry"
+  };
 
   String location  = "Bengaluru 🇮🇳";
-  String currently = "Learning Go + gRPC";
+  String learning  = "Go + gRPC";
   String motto     = "Trace everything.";
 }
 ```
@@ -57,41 +63,56 @@ class Deepak implements BackendEngineer {
 
 ---
 
-## ◈ System Design — `deepak.service`
-
-> *I am a microservice. Here's my architecture.*
+## ◈ Currently Building — `tail -f /var/log/deepak/wip.log`
 
 ```
-                         ┌─────────────────────────────────────────────────────┐
-                         │               G-DEEPAK-05 / v1.5.0                 │
-                         │           runtime: AWS EKS  ·  region: ap-south-1  │
-                         └──────────────────────┬──────────────────────────────┘
-                                                │
-              ┌─────────────────────────────────┼──────────────────────────────┐
-              │                                 │                              │
-    ┌─────────▼──────────┐          ┌───────────▼────────────┐      ┌─────────▼────────┐
-    │   INPUT ADAPTERS   │          │     CORE ENGINE        │      │  OUTPUT ADAPTERS │
-    │ ─────────────────  │          │  ──────────────────    │      │ ──────────────── │
-    │  🔐 Auth Gateway   │          │  ⚛  Project Reactor   │      │  🌐 REST (15+ EP)│
-    │  JWT · Redisson    │◄────────►│  Mono / Flux Streams   │─────►│  Kafka Producer  │
-    │                    │          │                         │      │  OpenSearch Logs │
-    │  📨 Kafka Consumer │          │  🧠 Business Logic      │      └──────────────────┘
-    │  Event-driven I/O  │◄────────►│  Java 17 · Streams     │
-    │                    │          │                         │      ┌──────────────────┐
-    │  🗄  R2DBC / PG    │          │  🔴 Redis Cache         │      │  OBSERVABILITY   │
-    │  Non-blocking I/O  │◄────────►│  Redisson · TTL         │─────►│  OpenTelemetry   │
-    └────────────────────┘          └─────────────────────────┘      │  Micrometer      │
-                                                                      │  Prometheus      │
-                                                                      └──────────────────┘
-    INFRA
-    ┌──────────────────────────────────────────────────────────────────────────────────┐
-    │  Terraform · Ansible  ──►  Jenkins CI/CD  ──►  Docker  ──►  Kubernetes (EKS)    │
-    └──────────────────────────────────────────────────────────────────────────────────┘
+[2025-09-xx] [INFO]  spawning goroutines... learning Go internals
+[2025-09-xx] [INFO]  protobuf schemas defined · gRPC server skeleton up
+[2025-09-xx] [INFO]  reading: Raft consensus paper (Ongaro & Ousterhout)
+[2025-09-xx] [INFO]  exploring: Event Sourcing + CQRS patterns
+[2025-09-xx] [INFO]  target: distributed KV store in Go  ← WIP
+[2025-09-xx] [WARN]  sleep() not called in 48h — feature, not a bug
+```
 
-    PROD METRICS
-    ┌──────────────────┬───────────────────┬──────────────────┬──────────────────────┐
-    │  latency  ▼ ~30% │  DB load   ▼ ~40% │  uptime   99.9%+ │  403 errors   ~zero  │
-    └──────────────────┴───────────────────┴──────────────────┴──────────────────────┘
+> **Next milestone:** gRPC service with bidirectional streaming, deployed on EKS — eta unknown, ETA always lies.
+
+---
+
+## ◈ Architecture — `deepak.service`
+
+> *I think in systems. Here's mine.*
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                  G-DEEPAK-05  /  v1.5.0                     │
+│           runtime: AWS EKS  ·  region: ap-south-1           │
+└───────────────────────────┬─────────────────────────────────┘
+                            │
+       ┌────────────────────┼────────────────────┐
+       │                    │                    │
+┌──────▼──────────┐  ┌──────▼──────────┐  ┌─────▼────────────┐
+│  INPUT ADAPTERS │  │   CORE ENGINE   │  │ OUTPUT ADAPTERS  │
+│ ─────────────── │  │ ─────────────── │  │ ──────────────── │
+│ 🔐 Auth Gateway │  │ ⚛  Proj Reactor │  │ 🌐 REST (15+ EP) │
+│  JWT · Redisson │◄─►│  Mono / Flux   │─►│ Kafka Producer  │
+│                 │  │                 │  │ OpenSearch Logs  │
+│ 📨 Kafka Topics │  │ 🧠 Java 17 +    │  └──────────────────┘
+│  Event-driven   │◄─►│   Streams API  │
+│                 │  │                 │  ┌──────────────────┐
+│ 🗄  R2DBC / PG  │  │ 🔴 Redis Cache  │  │  OBSERVABILITY   │
+│  Non-blocking   │◄─►│ Redisson · TTL │─►│ OpenTelemetry   │
+└─────────────────┘  └─────────────────┘  │ Micrometer      │
+                                           │ Prometheus      │
+                                           └──────────────────┘
+INFRA PIPELINE
+──────────────────────────────────────────────────────────────
+ Terraform · Ansible ──► Jenkins CI/CD ──► Docker ──► EKS
+──────────────────────────────────────────────────────────────
+
+PRODUCTION METRICS
+ ┌──────────────────┬──────────────────┬──────────────────────┐
+ │  latency  ▼ ~30% │  DB load  ▼ ~40% │  403 errors  ~zero   │
+ └──────────────────┴──────────────────┴──────────────────────┘
 ```
 
 ---
@@ -99,27 +120,48 @@ class Deepak implements BackendEngineer {
 ## ◈ Career — `git log --oneline`
 
 ```
-a3f91c2  (HEAD)  WIP: learning Go · gRPC · distributed systems patterns
-d7e2b41  feat: Backend Engineer @ Tejmonvi → Sportstech GmbH (Sep 2025)
-                 · 15+ Spring WebFlux APIs · ~30% latency reduction
-                 · Redis (Redisson) JWT caching → ~40% DB load cut
-                 · Zero prod 403s via OpenTelemetry + OpenSearch
-                 · Docker + EKS + Jenkins across 3 environments
-c1a09f8  feat: 4× Oracle Cloud Certifications in 3 months (Jun–Sep 2025)
-b5d3177  feat: AWS Cloud Engineer @ Cravita (Mar 2025)
-                 · CI/CD: CodePipeline + CodeDeploy + Jenkins
-                 · IaC: Terraform + Ansible across dev/staging/prod
-                 · 3-tier AWS: ALB · EC2 AutoScaling · RDS · VPC
-8f4e220  feat: Cloud Intern @ Rooman Technologies (Sep 2024)
-                 · 510h AWS + IBM Cloud · NSDC Level 5 Certified
-                 · Shipped Figma-prototyped app across 4 user journeys
-0d1c994  init: B.E. Information Science & Engineering, CGPA 7.69
-                 The Oxford College of Engineering, Bengaluru — 2025
+HEAD  wip:  learning Go · gRPC · Raft · Event Sourcing · CQRS
+
+●  Backend Engineer — Tejmonvi → Sportstech GmbH            [Sep 2025 – present]
+   ├─ Built 15+ Spring WebFlux APIs; ~30% latency improvement
+   ├─ Redis (Redisson) JWT caching → ~40% DB load reduction
+   ├─ Zero prod 403s via OpenTelemetry distributed tracing + OpenSearch
+   └─ Docker + EKS + Jenkins across dev / staging / prod
+
+●  4× Oracle Cloud Certifications                           [Jun – Sep 2025]
+   └─ Data Science Pro · Architect Associate · AI Foundations · Foundations
+
+●  AWS Cloud Engineer — Cravita Technologies                [Mar 2025]
+   ├─ CI/CD: CodePipeline + CodeDeploy + Jenkins
+   ├─ IaC: Terraform + Ansible across 3 environments
+   └─ 3-tier AWS stack: ALB · EC2 AutoScaling · RDS · VPC
+
+●  Cloud Intern — Rooman Technologies                       [Sep 2024]
+   ├─ 510h AWS + IBM Cloud training · NSDC Level 5 Certified
+   └─ Delivered Figma-prototyped app across 4 user journeys
+
+●  init: B.E. Information Science & Engineering             [2025]
+          The Oxford College of Engineering · CGPA 7.69
 ```
 
 ---
 
-## ◈ Shipped — `ls ./projects`
+## ◈ Featured Repos — `find . -name "*.prod" -type f`
+
+<div align="center">
+
+[![StakeLite](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=StakeLite&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/StakeLite)
+[![Seizure-Detector](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=Seizure-Detector&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/Seizure-Detector)
+
+[![Sign-Language-AI](https://github-readme-stats.vercel.app/api/pin/?username=G-Deepak-05&repo=Sign-Language-AI&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=bf91f3&text_color=c9d1d9&border_radius=6)](https://github.com/G-Deepak-05/Sign-Language-AI)
+
+</div>
+
+> ⚠️ _Replace repo names above with your actual repository slugs from GitHub._
+
+---
+
+## ◈ Projects — `ls ./projects`
 
 <table width="100%">
 <tr>
@@ -128,9 +170,9 @@ b5d3177  feat: AWS Cloud Engineer @ Cravita (Mar 2025)
 **⚡ StakeLite**
 `Virtual Betting Platform`
 
-SHA-256 provably fair REST APIs for auth, wallet & game logic. Real-time animated frontend.
+SHA-256 provably fair REST APIs for auth, wallet, and game logic. Real-time animated frontend.
 
-`Next.js 14` `Spring Boot 3` `Java 21` `PostgreSQL` `JWT`
+`Next.js 14` · `Spring Boot 3` · `Java 21` · `PostgreSQL` · `JWT`
 
 🚀 Zero-cost deploy — Vercel + Render + Supabase
 
@@ -142,7 +184,7 @@ SHA-256 provably fair REST APIs for auth, wallet & game logic. Real-time animate
 
 Feature-engineered ECG signals from 3 patient datasets. Integrated with wearable alert prototype.
 
-`Python` `scikit-learn` `Signal Processing`
+`Python` · `scikit-learn` · `Signal Processing`
 
 📈 +15% accuracy over baseline
 
@@ -150,11 +192,11 @@ Feature-engineered ECG signals from 3 patient datasets. Integrated with wearable
 <td width="33%" valign="top">
 
 **✋ Sign Language AI**
-`Real-time CV`
+`Real-time Computer Vision`
 
-Real-time video pipeline → frame capture → classifier. 10 ASL signs recognised live.
+Live video pipeline → frame capture → classifier. Recognises 10 ASL signs in real time.
 
-`Python` `OpenCV` `scikit-learn`
+`Python` · `OpenCV` · `scikit-learn`
 
 🎯 95%+ accuracy in real-time
 
@@ -168,19 +210,36 @@ Real-time video pipeline → frame capture → classifier. 10 ASL signs recognis
 
 ```json
 {
-  "languages":   ["Java 17", "Go", "Python", "SQL", "Shell"],
-  "frameworks":  ["Spring Boot", "Spring WebFlux", "Project Reactor",
-                  "Hibernate", "Django", "Next.js 14"],
-  "messaging":   ["Apache Kafka", "Redis (Redisson)", "Spring Integration"],
-  "databases":   ["PostgreSQL (R2DBC + JDBC)", "MySQL"],
-  "cloud_devops":["AWS (EKS · RDS · S3)", "Docker", "Kubernetes",
-                  "Jenkins", "Terraform", "Ansible"],
+  "languages":    ["Java 17", "Go", "Python", "SQL", "Shell"],
+  "frameworks":   ["Spring Boot", "Spring WebFlux", "Project Reactor",
+                   "Hibernate", "Django", "Next.js 14"],
+  "messaging":    ["Apache Kafka", "Redis (Redisson)", "Spring Integration"],
+  "databases":    ["PostgreSQL (R2DBC + JDBC)", "MySQL"],
+  "cloud_devops": ["AWS (EKS · RDS · S3 · CodePipeline)", "Docker",
+                   "Kubernetes", "Jenkins", "Terraform", "Ansible"],
   "observability":["OpenTelemetry", "Micrometer", "Prometheus",
                    "Logstash", "OpenSearch"],
-  "architecture":["Microservices", "Event-driven", "Reactive",
-                  "Distributed Systems", "RESTful APIs"]
+  "architecture": ["Microservices", "Event-driven", "Reactive",
+                   "Distributed Systems", "RESTful APIs"]
 }
 ```
+
+---
+
+## ◈ Certifications
+
+<div align="center">
+
+| Certification | Issuer | Date |
+|---|---|---|
+| Cloud Infrastructure — Data Science Professional | Oracle | Sep 2025 |
+| Cloud Infrastructure — Architect Associate | Oracle | Sep 2025 |
+| Cloud Infrastructure — AI Foundations Associate | Oracle | Aug 2025 |
+| Cloud Infrastructure — Foundations Associate | Oracle | Aug 2025 |
+| CDN with IBM Cloud Akamai Integration | IBM | Apr 2025 |
+| NSDC Level 5 Certification | NSDC | 2025 |
+
+</div>
 
 ---
 
@@ -207,31 +266,106 @@ Real-time video pipeline → frame capture → classifier. 10 ASL signs recognis
 
 ---
 
-## ◈ Certified
+## ◈ Coding Activity — `uptime`
+
+<!--
+  SETUP (one-time, 5 min):
+  1. Sign up at https://wakatime.com using your GitHub account
+  2. Install the WakaTime plugin for your IDE (IntelliJ, VS Code, etc.)
+  3. Add secret WAKATIME_API_KEY to your GitHub repo → Settings → Secrets
+  4. Create .github/workflows/waka.yml (template below) — it auto-updates this section weekly
+-->
+
+<!--START_SECTION:waka-->
+```text
+Java          ██████████████░░░░░░░░░░░   56.4 %
+Shell         ████░░░░░░░░░░░░░░░░░░░░░   15.2 %
+Python        ███░░░░░░░░░░░░░░░░░░░░░░   11.8 %
+Go            ██░░░░░░░░░░░░░░░░░░░░░░░    8.1 %
+SQL           █░░░░░░░░░░░░░░░░░░░░░░░░    5.3 %
+Other         ░░░░░░░░░░░░░░░░░░░░░░░░░    3.2 %
+```
+<!--END_SECTION:waka-->
+
+> ⚠️ _Numbers above are placeholders. Connect [WakaTime](https://wakatime.com) + add the [waka-readme](https://github.com/athul/waka-readme) GitHub Action to make this live-updating._
+
+**waka-readme workflow** — drop this in `.github/workflows/waka.yml`:
+
+```yaml
+name: Waka Readme
+on:
+  schedule:
+    - cron: '0 0 * * 1'   # every Monday midnight
+  workflow_dispatch:
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TOTAL: true
+          BLOCKS: █░
+```
+
+---
+
+## ◈ Contribution Snake — `./snake --eat-commits`
 
 <div align="center">
 
-| Certification | Issuer | Date |
-|---|---|---|
-| Cloud Infrastructure — Data Science Professional | Oracle | Sep 2025 |
-| Cloud Infrastructure — Architect Associate | Oracle | Sep 2025 |
-| Cloud Infrastructure — AI Foundations Associate | Oracle | Aug 2025 |
-| Cloud Infrastructure — Foundations Associate | Oracle | Aug 2025 |
-| CDN with IBM Cloud Akamai Integration | IBM | Apr 2025 |
-| NSDC Level 5 Certification | NSDC | 2025 |
+<!--
+  SETUP (one-time):
+  Create .github/workflows/snake.yml in your profile repo with the content below.
+  It generates the snake animation from your contribution grid every 24h.
+-->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/G-Deepak-05/G-Deepak-05/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/G-Deepak-05/G-Deepak-05/output/github-contribution-grid-snake.svg"/>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/G-Deepak-05/G-Deepak-05/output/github-contribution-grid-snake-dark.svg"/>
+</picture>
 
 </div>
+
+**Snake workflow** — drop this in `.github/workflows/snake.yml`:
+
+```yaml
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at midnight
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: G-Deepak-05
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
 
 ---
 
 ## ◈ Beyond the terminal
 
 ```
-role_outside_work  →  Cricket Team Captain  ·  led 15-member squad
-community          →  Programming Club Coordinator  ·  100+ members
-currently_reading  →  Designing Data-Intensive Applications — Kleppmann
-learning_queue     →  Go · gRPC · Raft · Event Sourcing · CQRS
-philosophy         →  "Build things you'd be proud to be paged about at 3AM."
+cricket        →  Team Captain  ·  led 15-member squad
+community      →  Programming Club Coordinator  ·  100+ members
+reading        →  Designing Data-Intensive Applications — Kleppmann
+learning_queue →  Go · gRPC · Raft · Event Sourcing · CQRS
+philosophy     →  "Build things you'd be proud to be paged about at 3AM."
 ```
 
 ---
@@ -240,6 +374,6 @@ philosophy         →  "Build things you'd be proud to be paged about at 3AM."
 <sub>
 <code>G-Deepak-05</code> &nbsp;·&nbsp; Bengaluru, India &nbsp;·&nbsp;
 <a href="mailto:gdepakise2025@gmail.com">gdepakise2025@gmail.com</a> &nbsp;·&nbsp;
-<a href="https://linkedin.com/in/gdeepak-ase">linkedin</a>
+<a href="https://linkedin.com/in/gdeepak-ase">linkedin.com/in/gdeepak-ase</a>
 </sub>
 </div>
