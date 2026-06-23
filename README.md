@@ -267,14 +267,6 @@ Live video pipeline → frame capture → classifier. Recognises 10 ASL signs in
 
 ## ◈ Coding Activity — `uptime`
 
-<!--
-  SETUP (one-time, 5 min):
-  1. Sign up at https://wakatime.com using your GitHub account
-  2. Install the WakaTime plugin for your IDE (IntelliJ, VS Code, etc.)
-  3. Add secret WAKATIME_API_KEY to your GitHub repo → Settings → Secrets
-  4. Create .github/workflows/waka.yml (template below) — it auto-updates this section weekly
--->
-
 <!--START_SECTION:waka-->
 ```text
 Java          ██████████████░░░░░░░░░░░   56.4 %
@@ -286,38 +278,11 @@ Other         ░░░░░░░░░░░░░░░░░░░░░░
 ```
 <!--END_SECTION:waka-->
 
-> ⚠️ _Numbers above are placeholders. Connect [WakaTime](https://wakatime.com) + add the [waka-readme](https://github.com/athul/waka-readme) GitHub Action to make this live-updating._
-
-**waka-readme workflow** — drop this in `.github/workflows/waka.yml`:
-
-```yaml
-name: Waka Readme
-on:
-  schedule:
-    - cron: '0 0 * * 1'   # every Monday midnight
-  workflow_dispatch:
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: athul/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TOTAL: true
-          BLOCKS: █░
-```
-
 ---
 
 ## ◈ Contribution Snake — `./snake --eat-commits`
 
 <div align="center">
-
-<!--
-  SETUP (one-time):
-  Create .github/workflows/snake.yml in your profile repo with the content below.
-  It generates the snake animation from your contribution grid every 24h.
--->
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/G-Deepak-05/G-Deepak-05/output/github-contribution-grid-snake-dark.svg"/>
@@ -326,34 +291,6 @@ jobs:
 </picture>
 
 </div>
-
-**Snake workflow** — drop this in `.github/workflows/snake.yml`:
-
-```yaml
-name: Generate Snake
-on:
-  schedule:
-    - cron: "0 0 * * *"   # daily at midnight
-  workflow_dispatch:
-permissions:
-  contents: write
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: G-Deepak-05
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
 
 ---
 
