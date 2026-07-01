@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '0 0 * * 1'   # every Monday midnight
   workflow_dispatch:
+
+permissions:
+  contents: write   # required so the action can commit the updated README back
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
