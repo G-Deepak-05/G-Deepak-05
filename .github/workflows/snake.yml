@@ -1,18 +1,23 @@
-name: Waka Readme
+name: Generate Snake
 on:
   schedule:
-    - cron: '0 0 * * 1'   # every Monday midnight
+    - cron: "0 0 * * *"   # daily at midnight
   workflow_dispatch:
-
 permissions:
-  contents: write   # required so the action can commit the updated README back
-
+  contents: write
 jobs:
-  update-readme:
+  generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: athul/waka-readme@master
+      - uses: Platane/snk/svg-only@v3
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TOTAL: true
-          BLOCKS: █░
+          github_user_name: G-Deepak-05
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
