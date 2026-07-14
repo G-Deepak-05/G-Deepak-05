@@ -96,37 +96,78 @@ class Deepak implements BackendEngineer {
 
 > *I think in systems. Here's mine.*
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                  G-DEEPAK-05  /  v1.5.0                     │
-│           runtime: AWS EKS  ·  region: ap-south-1           │
-└───────────────────────────┬─────────────────────────────────┘
-                            │
-       ┌────────────────────┼────────────────────┐
-       │                    │                    │
-┌──────▼──────────┐  ┌──────▼──────────┐  ┌─────▼────────────┐
-│  INPUT ADAPTERS │  │   CORE ENGINE   │  │ OUTPUT ADAPTERS  │
-│ ─────────────── │  │ ─────────────── │  │ ──────────────── │
-│ 🔐 Auth Gateway │  │ ⚛  Proj Reactor │  │ 🌐 REST (15+ EP) │
-│  JWT · Redisson │◄─►│  Mono / Flux   │─►│ Kafka Producer  │
-│                 │  │                 │  │ OpenSearch Logs  │
-│ 📨 Kafka Topics │  │ 🧠 Java 17 +    │  └──────────────────┘
-│  Event-driven   │◄─►│   Streams API  │
-│                 │  │                 │  ┌──────────────────┐
-│ 🗄  R2DBC / PG  │  │ 🔴 Redis Cache  │  │  OBSERVABILITY   │
-│  Non-blocking   │◄─►│ Redisson · TTL │─►│ OpenTelemetry   │
-└─────────────────┘  └─────────────────┘  │ Micrometer      │
-                                           │ Prometheus      │
-                                           └──────────────────┘
-INFRA PIPELINE
-──────────────────────────────────────────────────────────────
- Terraform · Ansible ──► Jenkins CI/CD ──► Docker ──► EKS
-──────────────────────────────────────────────────────────────
+```mermaid
+flowchart TB
+    subgraph SYS[" G-DEEPAK-05 · v1.5.0 — runtime: AWS EKS · region: ap-south-1 "]
+        direction LR
 
-PRODUCTION METRICS
- ┌──────────────────┬──────────────────┬──────────────────────┐
- │  latency  ▼ ~30% │  DB load  ▼ ~40% │  403 errors  ~zero   │
- └──────────────────┴──────────────────┴──────────────────────┘
+        subgraph INPUT[" 📥 INPUT ADAPTERS "]
+            direction TB
+            AUTH["🔐 Auth Gateway<br/>JWT · Redisson"]
+            KAFKAIN["📨 Kafka Topics<br/>Event-driven"]
+            DB["🗄️ R2DBC / PostgreSQL<br/>Non-blocking"]
+        end
+
+        subgraph CORE[" ⚙️ CORE ENGINE "]
+            direction TB
+            REACTOR["⚛️ Project Reactor<br/>Mono / Flux"]
+            JAVA["🧠 Java 17 + Streams API"]
+            REDIS["🔴 Redis Cache<br/>Redisson · TTL"]
+        end
+
+        subgraph OUTPUT[" 📤 OUTPUT ADAPTERS "]
+            direction TB
+            REST["🌐 REST API<br/>15+ Endpoints"]
+            KAFKAOUT["📮 Kafka Producer"]
+            LOGS["📝 OpenSearch Logs"]
+        end
+
+        AUTH <--> REACTOR
+        KAFKAIN <--> JAVA
+        DB <--> REDIS
+        REACTOR --> REST
+        JAVA --> KAFKAOUT
+        REDIS --> LOGS
+    end
+
+    subgraph OBS[" 📊 OBSERVABILITY "]
+        direction LR
+        OTEL[OpenTelemetry]
+        MICRO[Micrometer]
+        PROM[Prometheus]
+    end
+
+    OUTPUT -.-> OBS
+
+    subgraph INFRA[" 🔧 INFRA PIPELINE "]
+        direction LR
+        TF["Terraform · Ansible"] --> JENKINS["Jenkins CI/CD"] --> DOCKER["Docker"] --> EKSN["EKS"]
+    end
+
+    SYS ==> INFRA
+
+    subgraph METRICS[" 📈 PRODUCTION METRICS "]
+        direction LR
+        M1["Latency<br/>▼ ~30%"]
+        M2["DB Load<br/>▼ ~40%"]
+        M3["403 Errors<br/>~zero"]
+    end
+
+    INFRA ==> METRICS
+
+    classDef inputStyle fill:#1a1b26,stroke:#70a5fd,stroke-width:2px,color:#c9d1d9
+    classDef coreStyle fill:#1a1b26,stroke:#bf91f3,stroke-width:2px,color:#c9d1d9
+    classDef outputStyle fill:#1a1b26,stroke:#38bdae,stroke-width:2px,color:#c9d1d9
+    classDef obsStyle fill:#1a1b26,stroke:#f7768e,stroke-width:2px,color:#c9d1d9
+    classDef infraStyle fill:#1a1b26,stroke:#e0af68,stroke-width:2px,color:#c9d1d9
+    classDef metricStyle fill:#1a1b26,stroke:#9ece6a,stroke-width:2px,color:#c9d1d9
+
+    class AUTH,KAFKAIN,DB inputStyle
+    class REACTOR,JAVA,REDIS coreStyle
+    class REST,KAFKAOUT,LOGS outputStyle
+    class OTEL,MICRO,PROM obsStyle
+    class TF,JENKINS,DOCKER,EKSN infraStyle
+    class M1,M2,M3 metricStyle
 ```
 
 ---
