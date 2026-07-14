@@ -17,6 +17,10 @@
 [![Email](https://img.shields.io/badge/Email-gdepakise2025@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:gdepakise2025@gmail.com)
 [![Profile Views](https://komarev.com/ghpvc/?username=G-Deepak-05&color=70a5fd&style=flat-square&label=profile+views)](https://github.com/G-Deepak-05)
 
+<br/>
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=false" alt="dev quote"/>
+
 </div>
 
 <br/>
@@ -60,6 +64,16 @@ class Deepak implements BackendEngineer {
 
 </td>
 </tr></table>
+
+---
+
+## ◈ Tech Radar — `skillicons --render`
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,go,python,spring,kafka,redis,docker,kubernetes,aws,postgres,terraform,prometheus,grafana,git&theme=dark" alt="tech radar"/>
+
+</div>
 
 ---
 
@@ -237,6 +251,16 @@ Live video pipeline → frame capture → classifier. Recognises 10 ASL signs in
 | Cloud Infrastructure — Foundations Associate | Oracle | Aug 2025 |
 | CDN with IBM Cloud Akamai Integration | IBM | Apr 2025 |
 | NSDC Level 5 Certification | NSDC | 2025 |
+
+</div>
+
+---
+
+## ◈ Trophy Case — `unlock --achievements`
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=G-Deepak-05&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="trophies"/>
 
 </div>
 
