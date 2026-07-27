@@ -7,7 +7,7 @@ Single accent color only -- multi-color ASCII reads as noise.
 from PIL import Image, ImageOps
 
 SRC = "assets/photo-ready.png"
-OUT = "out/portrait.svg"
+OUT = "portrait.svg"
 
 GLYPHS = " '.,:;~+*xXO#"   # light/empty -> dense/dark
 ACCENT = "#70a5fd"          # tokyonight blue, matches sysinfo/graph accent

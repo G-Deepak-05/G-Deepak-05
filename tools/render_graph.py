@@ -8,7 +8,7 @@ used across the profile.
 import json
 
 DATA_PATH = "assets/contributions.json"
-OUT_PATH = "out/graph.svg"
+OUT_PATH = "graph.svg"
 
 # empty -> top intensity, tokyonight blue/purple ramp
 LEVELS = ["#161b22", "#24345e", "#2f5aa8", "#70a5fd", "#bf91f3"]

@@ -5,7 +5,7 @@ contribution graph can't show lives: what's actually being worked on right
 now, not just how often commits land.
 """
 
-OUT = "out/sysinfo.svg"
+OUT = "sysinfo.svg"
 
 BG = "#0d1117"
 PANEL_BG = "#161b22"
