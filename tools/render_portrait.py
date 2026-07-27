@@ -4,7 +4,7 @@ row is wrapped in its own clip rect that animates from width 0 -> full,
 staggered ~40ms apart, so the portrait appears to draw itself top to bottom.
 Single accent color only -- multi-color ASCII reads as noise.
 """
-from PIL import Image, ImageOps
+from PIL import Image, ImageFilter, ImageOps
 
 SRC = "assets/photo-ready.png"
 OUT = "portrait.svg"
@@ -12,15 +12,24 @@ OUT = "portrait.svg"
 GLYPHS = " '.,:;~+*xXO#"   # light/empty -> dense/dark
 ACCENT = "#70a5fd"          # tokyonight blue, matches sysinfo/graph accent
 
-COLS = 78
+COLS = 92
 CHAR_W = 7.2
 CHAR_H = 13.5
 ROW_DELAY = 0.04  # seconds between each row starting its draw-in
+UNSHARP = 0.8     # local contrast added at the character-cell scale
 
 
 def main():
     im = Image.open(SRC).convert("L")
     w, h = im.size
+
+    # Averaging a whole cell down to one glyph washes out anything smaller
+    # than the cell, so lift local contrast at exactly that scale first --
+    # otherwise the eyes/mouth/jaw dissolve into the surrounding skin tone.
+    if UNSHARP > 0:
+        radius = max(1.0, (w / COLS) * 0.55)
+        blurred = im.filter(ImageFilter.GaussianBlur(radius))
+        im = Image.blend(blurred, im, 1 + UNSHARP)
 
     # monospace glyphs are taller than wide -- correct the aspect ratio so
     # the character grid maps back to a natural-looking portrait
