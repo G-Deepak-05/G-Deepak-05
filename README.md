@@ -371,6 +371,29 @@ philosophy     →  "Build things you'd be proud to be paged about at 3AM."
 
 ---
 
+## ◈ Living Terminal — `render --self`
+
+<sub>No badge services here — these three are plain self-animating SVGs, committed to this repo and redrawn by a daily GitHub Action. If a hosted widget goes down, this doesn't.</sub>
+
+<div align="center">
+
+<h3><code>$ whoami --portrait</code></h3>
+<table>
+  <tr>
+    <td valign="top"><img src="./portrait.svg" width="360" /></td>
+    <td valign="top"><img src="./sysinfo.svg" width="460" /></td>
+  </tr>
+</table>
+
+<br/>
+
+<h3><code>$ cat contributions.log</code></h3>
+<img src="./graph.svg" width="820" />
+
+</div>
+
+---
+
 <div align="center">
 <sub>
 <code>G-Deepak-05</code> &nbsp;·&nbsp; Bengaluru, India &nbsp;·&nbsp;

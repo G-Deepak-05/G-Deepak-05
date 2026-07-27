@@ -1,0 +1,45 @@
+<svg viewBox="0 0 460 212" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="JetBrains Mono, SFMono-Regular, Consolas, monospace">
+<style>.panel{fill:#161b22;stroke:#2f3b52;stroke-width:1.2;}.hdrtxt{fill:#c9d1d9;font-size:12px;}.label{fill:#8b949e;font-size:12.5px;}.value{fill:#c9d1d9;font-size:12.5px;}.rowline{stroke:#2f3b52;stroke-width:1;}</style>
+<rect class="panel" x="1" y="1" width="458" height="210" rx="8" ry="8" />
+<rect x="1" y="1" width="458" height="34" rx="8" ry="8" fill="#2f3b52" opacity="0.35" />
+<rect x="1" y="27" width="458" height="7" fill="#161b22" />
+<circle cx="18" cy="18.0" r="4.2" fill="#f77669" />
+<circle cx="32" cy="18.0" r="4.2" fill="#e5c07b" />
+<circle cx="46" cy="18.0" r="4.2" fill="#9ece6a" />
+<text class="hdrtxt" x="230.0" y="22.0" text-anchor="middle">sysinfo</text>
+<g id="row0" opacity="0">
+<animate xlink:href="#row0" attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.35s" fill="freeze" />
+<animateTransform xlink:href="#row0" attributeName="transform" type="translate" from="-10 0" to="0 0" begin="0.3s" dur="0.35s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+<text class="label" x="18" y="66.6">user</text>
+<text class="value" x="110" y="66.6">G-Deepak-05</text>
+</g>
+<line class="rowline" x1="18" y1="75" x2="442" y2="75" opacity="0.4" />
+<g id="row1" opacity="0">
+<animate xlink:href="#row1" attributeName="opacity" from="0" to="1" begin="0.58s" dur="0.35s" fill="freeze" />
+<animateTransform xlink:href="#row1" attributeName="transform" type="translate" from="-10 0" to="0 0" begin="0.58s" dur="0.35s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+<text class="label" x="18" y="96.6">role</text>
+<text class="value" x="110" y="96.6">Backend Engineer</text>
+</g>
+<line class="rowline" x1="18" y1="105" x2="442" y2="105" opacity="0.4" />
+<g id="row2" opacity="0">
+<animate xlink:href="#row2" attributeName="opacity" from="0" to="1" begin="0.86s" dur="0.35s" fill="freeze" />
+<animateTransform xlink:href="#row2" attributeName="transform" type="translate" from="-10 0" to="0 0" begin="0.86s" dur="0.35s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+<text class="label" x="18" y="126.6">focus</text>
+<text class="value" x="110" y="126.6">Distributed Systems</text>
+</g>
+<line class="rowline" x1="18" y1="135" x2="442" y2="135" opacity="0.4" />
+<g id="row3" opacity="0">
+<animate xlink:href="#row3" attributeName="opacity" from="0" to="1" begin="1.14s" dur="0.35s" fill="freeze" />
+<animateTransform xlink:href="#row3" attributeName="transform" type="translate" from="-10 0" to="0 0" begin="1.14s" dur="0.35s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+<text class="label" x="18" y="156.6">stack</text>
+<text class="value" x="110" y="156.6">Java 17 · Go · Kafka · K8s</text>
+</g>
+<line class="rowline" x1="18" y1="165" x2="442" y2="165" opacity="0.4" />
+<g id="row4" opacity="0">
+<animate xlink:href="#row4" attributeName="opacity" from="0" to="1" begin="1.42s" dur="0.35s" fill="freeze" />
+<animateTransform xlink:href="#row4" attributeName="transform" type="translate" from="-10 0" to="0 0" begin="1.42s" dur="0.35s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1" />
+<text class="label" x="18" y="186.6">now</text>
+<text class="value" x="110" y="186.6">Building a distributed KV store in Go</text>
+<rect x="398.9" y="175.6" width="7" height="13" fill="#70a5fd" opacity="0"><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.5;0.51;1" begin="1.77s" dur="1s" repeatCount="indefinite" /></rect>
+</g>
+</svg>
