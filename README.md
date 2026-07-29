@@ -373,8 +373,6 @@ philosophy     →  "Build things you'd be proud to be paged about at 3AM."
 
 ## ◈ Living Terminal — `render --self`
 
-<sub>No badge services here — these three are plain self-animating SVGs, committed to this repo and redrawn by a daily GitHub Action. If a hosted widget goes down, this doesn't.</sub>
-
 <div align="center">
 
 <h3><code>$ whoami --portrait</code></h3>
